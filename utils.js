@@ -18,6 +18,10 @@ class array1d {
   static getAllWithValue(array, value) {
     return array.filter((item) => item === value);
   }
+  
+  static getNumberArrayFromString(string, separator = " "){
+    return string.split(separator).map((item) => parseInt(item))
+  }
 
   static getStringArrayAsNumbers(array) {
     return array.map((item) => parseInt(item));
