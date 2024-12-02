@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const { exec } = require('child_process');
 
-let dayFolder = `./day-${new Date().getDate()}`;
+let dayFolder = `./day-${new Date().getDate() + 1}`;
 const templateFolder = './template_day';
 
 (async () => {

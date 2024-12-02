@@ -18,6 +18,14 @@ class array1d {
   static getAllWithValue(array, value) {
     return array.filter((item) => item === value);
   }
+
+  static getStringArrayAsNumbers(array) {
+    return array.map((item) => parseInt(item));
+  }
+
+  static getNumberArrayAsString(array) {
+    return array.map((item) => item.toString());
+  }
 }
 
 class array2d {
@@ -41,7 +49,7 @@ class array2d {
     return array.reverse();
   }
 
-  static mirrorVertically(array) {  
+  static mirrorVertically(array) {
     return array.slice().reverse();
   }
 
@@ -63,15 +71,9 @@ class convert {
     return String.fromCharCode(value);
   }
 
-  static getStringArrayAsNumbers(array) {
-    return array.map((item) => parseInt(item));
-  }
 
-  static getNumberArrayAsString(array) {
-    return array.map((item) => item.toString());
-  }
 }
 
 
 
-export default { array: sorting, convert: ascii };
+export default { array1d, array2d, convert };
