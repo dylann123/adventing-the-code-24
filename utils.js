@@ -30,6 +30,10 @@ class array1d {
   static getNumberArrayAsString(array) {
     return array.map((item) => item.toString());
   }
+
+  static mirror(array) {
+    return array.slice().reverse();
+  }
 }
 
 class array2d {
@@ -76,4 +80,5 @@ class convert {
   }
 }
 
+export { array1d, array2d, convert };
 export default { array1d, array2d, convert };
