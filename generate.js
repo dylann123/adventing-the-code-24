@@ -31,15 +31,6 @@ function folder() {
 		fs.copyFileSync(filePath, newFilePath);
 	});
 
-	exec(`code ${dayFolder}`, (err, stdout, stderr) => {
-		if (err) {
-			console.log(err);
-			return;
-		}
-		console.log(stdout);
-		console.log(stderr);
-	});
-
 	console.log(`${dayFolder} created`);
 }
 

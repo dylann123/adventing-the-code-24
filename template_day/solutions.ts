@@ -6,7 +6,7 @@ function solution1 (input = "") {
 	let solution = 0
 
 	for(let i = 0; i < lines.length; i++) {
-		
+
 	}
 
 	return solution || "Incomplete"
@@ -25,3 +25,8 @@ function solution2 (input = "") {
 }
 
 export default { solution1, solution2 }
+
+class l {
+	static og = (...value: any) => console.log(...value)
+	static ogf = (...value: any) => console.log(...value.map((v: { toString: () => any }) => v.toString()))
+}

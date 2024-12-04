@@ -74,10 +74,6 @@ class convert {
   static getCharFromAsciiValue(value) {
     return String.fromCharCode(value);
   }
-
-
 }
-
-
 
 export default { array1d, array2d, convert };
