@@ -16,7 +16,7 @@ function solution1 (input = "") {
 		let column = ""
 		for(let j = 0; j < lines.length; j++) {
 			column += lines[j][i]
-		}
+		} 
 		solution += countInstancesOfStringInString(column, "XMAS")// normal
 		solution += countInstancesOfStringInString(column, "SAMX")// reverse
 	}
