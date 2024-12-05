@@ -65,16 +65,10 @@ function solution2 (input = "") {
 
 	for(let i = 0; i < lines.length-2; i++) {
 		for(let j = 0; j < lines[i].length - 2; j++) {
-			let chunk = lines[i][j] + lines[i][j+2] + lines[i+1][j+1] + lines[i+2][j] + lines[i+2][j+2]
 			let cross1 = lines[i][j] + lines[i+1][j+1] + lines[i+2][j+2]
 			let cross2 = lines[i][j+2] + lines[i+1][j+1] + lines[i+2][j]
-			let ms = countInstancesOfStringInString(chunk, "M")
-			let as = countInstancesOfStringInString(chunk, "A")
-			let ss = countInstancesOfStringInString(chunk, "S")
-			if(ms == 2 && as == 1 && ss == 2) {
-				if(cross1 == "MAS" || cross1 == "SAM" && cross2 == "MAS" || cross2 == "SAM") {
-					solution++
-				}
+			if(cross1 == "MAS" || cross1 == "SAM" && cross2 == "MAS" || cross2 == "SAM") {
+				solution++
 			}
 		}
 	}
