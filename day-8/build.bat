@@ -1,0 +1,1 @@
+tsc solutions.ts -w
